@@ -18,7 +18,7 @@
           <h1 class="pl-2 font-bold">Сток30ник</h1>
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
-              <a v-for="item in navigation" :key="item.name" :href="item.href" :class="[item.current ? 'bg-gray-900 text-gray-700' : 'text-gray-700 hover:bg-gray-700 hover:text-white', 'rounded-md px-3 py-2 text-sm font-medium']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</a>
+              <router-link v-for="item in navigation" :key="item.name" :to="item.href" :class="[item.current ? 'bg-gray-900 text-gray-700' : 'text-gray-700 hover:bg-gray-700 hover:text-white', 'rounded-md px-3 py-2 text-sm font-medium']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</router-link>
             </div>
           </div>
         </div>
@@ -39,10 +39,11 @@ import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuIt
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/vue/24/outline'
 
 const navigation = [
-  { name: 'Home', href: '#', current: false },
-  { name: 'Каталог', href: '#', current: false },
-  { name: 'Распродажа', href: '#', current: false },
-  { name: 'Спорт', href: '#', current: false },
-  { name: 'Бренд', href: '#', current: false },
+    { name: 'Home', href: '/', current: false },
+    { name: 'Каталог', href: 'catalog', current: false },
+    { name: 'Распродажа', href: 'sales', current: false },
+    { name: 'Спорт', href: 'sport', current: false },
+    { name: 'Бренд', href: 'brand', current: false },
+    { name: 'Рабочая одежда', href: 'work-clothes', current: false },
 ]
 </script>

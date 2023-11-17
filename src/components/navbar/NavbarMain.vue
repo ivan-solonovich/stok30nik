@@ -42,6 +42,7 @@ const navigation = [
   { name: 'Home', href: '#', current: false },
   { name: 'Каталог', href: '#', current: false },
   { name: 'Распродажа', href: '#', current: false },
+  { name: 'Спорт', href: '#', current: false },
   { name: 'Бренд', href: '#', current: false },
 ]
 </script>

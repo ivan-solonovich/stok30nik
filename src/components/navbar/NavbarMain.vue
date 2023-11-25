@@ -45,5 +45,6 @@ const navigation = [
     { name: 'Спорт', href: 'sport', current: false },
     { name: 'Бренд', href: 'brand', current: false },
     { name: 'Рабочая одежда', href: 'work-clothes', current: false },
+    { name: 'XXXL', href: 'xxxl', current: false },
 ]
 </script>

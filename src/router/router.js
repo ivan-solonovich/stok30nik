@@ -7,6 +7,7 @@ import SalesMain from "../view/sales/SalesMain.vue";
 import SportMain from "../view/sport/SportMain.vue";
 import BrandMain from "../view/brand/BrandMain.vue";
 import WorkClothesMain from "../view/workClothes/WorkClothesMain.vue";
+import xxxlSize from "../view/xxxl/xxxlSize.vue";
 
 const routes =
     [
@@ -45,6 +46,12 @@ const routes =
             path: '/work-clothes',
             name: 'work-clothes',
             component: WorkClothesMain,
+
+        },
+        {
+            path: '/xxxl',
+            name: 'xxxl',
+            component: xxxlSize,
 
         },
     ]

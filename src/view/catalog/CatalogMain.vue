@@ -2,6 +2,7 @@
 import {computed, onMounted, ref} from "vue";
 import store from "../../store/store.js";
 import {data} from "autoprefixer";
+import CatalogCategories from "./CatalogCategories.vue";
 
 
 let mainCategories = ref([])
@@ -34,32 +35,7 @@ console.log(getProducts);
         </h3>
         <hr/>
     </div>
-    <div class="w-full flex justify-around gap-8 flex-wrap">
-        <div class="w-[300px]">
-           <img class="w-full" src="https://ik.imagekit.io/b367zdch6/catalog-collections-pictures/collection-of-beige-tone-colored-pants_23-2150773424.jpg?updatedAt=1700927960198">
-        </div>
-        <div class="w-[300px]">
-            <img class="w-full" src="https://ik.imagekit.io/b367zdch6/catalog-collections-pictures/close-up-on-flannel-shirt-detail.jpg?updatedAt=1700927812776">
-        </div>
-        <div class="w-[300px]">
-            <img class="w-full" src="https://ik.imagekit.io/b367zdch6/catalog-collections-pictures/baby-elementson-pink.jpg?updatedAt=1700931265802">
-        </div>
-        <div class="w-[300px]">
-            <img class="w-full" src="https://ik.imagekit.io/b367zdch6/catalog-collections-pictures/baby-boy-clothes-on-white-background.jpg?updatedAt=1700931248075">
-        </div>
-        <div class="w-[300px]">
-            <img class="w-full" src="https://ik.imagekit.io/b367zdch6/catalog-collections-pictures/women-sports-wear-mockup-active-wear-apparel.jpg?updatedAt=1700932178425">
-        </div>
-        <div class="w-[300px]">
-            <img class="w-full" src="https://ik.imagekit.io/b367zdch6/catalog-collections-pictures/plus-size-jacket-apparel-women-s-fashion_53876-97872.jpg?updatedAt=1700932163007">
-        </div>
-        <div class="w-[300px]">
-            <img class="w-full" src="https://ik.imagekit.io/b367zdch6/catalog-collections-pictures/female-and-male-workers-wearing-work-clothes.jpg?updatedAt=1700932149268">
-        </div>
-        <div class="w-[300px]">
-            <img class="w-full" src="https://ik.imagekit.io/b367zdch6/catalog-collections-pictures/stack-of-clothes-on-white-background-closeup.jpg?updatedAt=1700932555673">
-        </div>
-    </div>
+   <router-view/>
   <h3 class="p-3 m-5">{{ mainCategories }}</h3>
 <hr/>
  <ol class="w-full flex  gap-8">

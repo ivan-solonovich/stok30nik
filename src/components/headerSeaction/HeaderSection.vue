@@ -29,11 +29,11 @@
 
 <script setup>
 const links = [
-  { name: 'Для мужчин', href: '#' },
-  { name: 'Для женщин', href: '#' },
-  { name: 'Для мальчиков', href: '#' },
-  { name: 'Для девочек', href: '#' },
-  { name: 'Рабочая одежда', href: '#' },
+  { name: 'Для мужчин', href: 'men-clothes' },
+  { name: 'Для женщин', href: 'women-clothes' },
+  { name: 'Для мальчиков', href: 'boys-clothes' },
+  { name: 'Для девочек', href: 'girls-clothes' },
+  { name: 'Рабочая одежда', href: 'works-clothes' },
 ]
 const stats = [
   { name: 'Куртки', value: '100+' },
